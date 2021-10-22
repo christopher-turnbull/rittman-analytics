@@ -1,0 +1,16 @@
+version: 2
+
+models:
+    - name: fact_questions
+      description: "Fact table containing questions by tag and date. No primary key"
+      columns:
+          - name: id
+            description: The question key
+            tests:
+                - not_null
+        #   - name: "rmpostcode"
+        #     description: Postcode in Royal Mail format
+        #     quote: true
+        #     tests:
+        #         - unique
+        #         - not_null
